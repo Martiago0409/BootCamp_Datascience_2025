@@ -1,3 +1,5 @@
+#Parte 1 / Normalizacion de datos
+
 users = [
     ['32415', ' mike_reed ', 32.0, ['ELECTRONICS', 'SPORT', 'BOOKS'], [894, 213, 173]],
     ['31980', 'kate morgan', 24.0, ['CLOTHES', 'BOOKS'], [439, 390]],
@@ -29,6 +31,8 @@ for i in range(len(users)):
                     users[i][j][k]=users[i][j][k].lower()
 
 print(*users, sep="\n")
+
+#Parte 2 / 
        
     
     
