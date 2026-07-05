@@ -1,4 +1,4 @@
-#Parte 1 / Normalizacion de datos
+#Parte 1 / Normalizacion de datos en una lista
 
 users = [
     ['32415', ' mike_reed ', 32.0, ['ELECTRONICS', 'SPORT', 'BOOKS'], [894, 213, 173]],
@@ -30,11 +30,17 @@ for i in range(len(users)):
                 if isinstance(users[i][j][k], str):
                     users[i][j][k]=users[i][j][k].lower()
 
-print(*users, sep="\n")
+#Parte 2 / Creacion del dataframe usando Pandas
 
-#Parte 2 / 
-       
-    
+import pandas as pd
+
+#Definicion de las columnas
+columnas = ["ID", "nombre", "edad", "categorias", "gastos"]
+
+#Dataframe
+df = pd.DataFrame(users, columns=columnas)
+
+print(df)
     
 
        
